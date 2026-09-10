@@ -1,0 +1,39 @@
+// =========================================================
+// DT ODONTOLOGÍA — tema Bootstrap personalizado
+// Sobrescribe las variables de Bootstrap antes de importarlo
+// para que los componentes (Card, Accordion, Modal, Navbar…)
+// nazcan ya con la identidad propia del sitio.
+// =========================================================
+
+$primary: #5C93E0;
+$secondary: #7E8FB2;
+$success: #25D366;
+$info: #9CC0F2;
+$warning: #D2AD79;
+$danger: #E1306C;
+$light: #F3F7FD;
+$dark: #050C1E;
+
+$body-bg: #050C1E;
+$body-color: #B7C6E0;
+$link-color: $info;
+$link-hover-color: #c9dcf6;
+$link-decoration: none;
+
+$font-family-sans-serif: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$headings-font-family: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+$headings-font-weight: 600;
+$headings-color: #F3F7FD;
+$headings-letter-spacing: -.02em;
+
+$border-radius: .375rem;
+$border-radius-sm: .25rem;
+$border-radius-lg: .625rem;
+$border-color: rgba(255, 255, 255, .08);
+
+$enable-negative-margins: true;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: $info;
+
+@import "bootstrap/scss/bootstrap";

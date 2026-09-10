@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# EDITAR: reemplazar el dominio por la URL real del sitio una vez publicado
+Sitemap: https://dtodontologia.com.ar/sitemap.xml
