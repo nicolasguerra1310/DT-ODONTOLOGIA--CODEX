@@ -210,12 +210,15 @@ a.topbar-item:hover{color:#fff}
 
 /* ---------- Experiencias de pacientes ---------- */
 .testimonials-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
-.testimonial-card{grid-column:span 2;position:relative;display:flex;flex-direction:column;min-height:185px;padding:26px;background:var(--surface);border:1px solid var(--linea);border-radius:.5rem;overflow:hidden}
+.testimonial-card{grid-column:span 2;position:relative;display:flex;flex-direction:column;min-height:250px;padding:30px;background:var(--surface);border:1px solid var(--linea);border-radius:.75rem;overflow:hidden}
 .testimonial-card:nth-child(4){grid-column:2 / span 2}
 .testimonial-card:nth-child(5){grid-column:4 / span 2}
 .testimonial-quote{position:absolute;top:10px;right:22px;font-family:var(--f-display);font-size:5.5rem;line-height:1;color:rgba(156,192,242,.14)}
-.testimonial-card p{position:relative;color:var(--texto-2);font-size:1rem;line-height:1.7;margin:12px 0 28px}
-.testimonial-card footer{margin-top:auto;color:var(--texto);font-family:var(--bs-font-sans-serif);font-size:.82rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+.testimonial-card p{position:relative;color:var(--texto-2);font-size:1rem;line-height:1.7;margin:12px 0 24px}
+.testimonial-card footer{display:flex;flex-direction:column;gap:4px;margin-top:auto;color:var(--texto);font-family:var(--bs-font-sans-serif);font-size:.95rem;line-height:1.45}
+.testimonial-card footer strong{font-weight:750}
+.testimonial-card footer span{color:var(--texto-2);font-weight:600}
+.testimonial-stars{margin-top:16px;color:#f2ad4b;font-size:1.05rem;letter-spacing:.12em;line-height:1}
 .testimonials-note{text-align:center;color:var(--texto-3);font-size:.84rem;margin:28px 0 0}
 
 @media (max-width:991px){
@@ -225,8 +228,8 @@ a.topbar-item:hover{color:#fff}
 }
 
 @media (max-width:575px){
-  .testimonials-grid{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 14px;margin-inline:0;scrollbar-width:thin}
-  .testimonial-card,.testimonial-card:last-child{flex:0 0 min(82vw,300px);width:auto;min-height:190px;padding:26px 24px;scroll-snap-align:center}
+  .testimonials-grid{display:grid;grid-template-columns:1fr;gap:16px;overflow:visible;padding:0;margin-inline:0}
+  .testimonial-card,.testimonial-card:last-child{grid-column:auto;width:100%;min-height:auto;padding:26px 24px}
   .testimonials-note{margin-top:20px}
 }
 
